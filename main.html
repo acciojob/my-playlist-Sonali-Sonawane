@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Playlist Page</title>
+<style>
+  body {
+    background-color: rgb(204, 204, 204);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
 
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  a {
+    text-decoration-line: none;
+  }
+
+  .player_one, .player_two {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+  }
+</style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>My Playlist</h1>
-	<div class="player_one">
-		<ul>
-			<li><a href="https://www.youtube.com/watch?v=kd-6aw99DpAhttps://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 1</a></li>
-			<li><a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a></li>
-			<li><a href=" https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a></li>
-			<li><a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a></li>
-			<li><a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a></li>
-		</ul>
-	</div>
-	<h2>Now Playing...</h2>
-	<div class="player_two">
-		<video controls>
-			<source src="https://www.w3schools.com/tags/movie.mp4" type="mp4">
-		</video>
-		<h2>MP3 songs</h2>
-		<audio controls>
-			<source src="https://www.pagalworld.com.se/files/download/id/64630" type="mp3" >
-		</audio>
-	</div>
-		
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<h1>My Playlist</h1>
+<h2>Now Playing...</h2>
+
+<div class="player_one">
+  <h2>MP3 songs</h2>
+  <ul>
+    <li><a href="song1.mp3" target="_blank">Song 1</a></li>
+    <li><a href="song2.mp3" target="_blank">Song 2</a></li>
+    <li><a href="song3.mp3" target="_blank">Song 3</a></li>
+    <li><a href="song4.mp3" target="_blank">Song 4</a></li>
+    <li><a href="song5.mp3" target="_blank">Song 5</a></li>
+  </ul>
+</div>
+
+<div class="player_two">
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+</div>
 
 </body>
-
 </html>
